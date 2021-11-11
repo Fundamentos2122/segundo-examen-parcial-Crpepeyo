@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-Crpepeyo/css/framework.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="container-fluid container-S">
+    <div class="row bg-info">
+        <div class="col-12 col-S-12  center">
+            <h1>Lista de tareas </h1>
+        </div>
+        <div class="col-12 col-S-12  center">
+            <h6>Cristopher Zadquiel Pérez González</h6>
+        </div>
+    </div>
+    <div class="row"> 
+        <div class="col-12 col-S-12 bg-light">
+            <br>
+            <input id="VT" onclick="vertodosClick(this)" type="checkbox">
+            <label for="VT">Ver todos</label>
+            <button style="float: right;" class="btn btn-primary" data-toggle="modal" data-target="#modal-test">
+                Nueva
+            </button>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-S-12" id="tareas">
+            <div class="border-top">
+                <div class="row">
+                    <div class="col-10">
+                        <h3>Titulo</h3>
+                    </div>
+                    <div class="col-2 center">
+                        <h5>Fecha</h5>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum repellendus sit iste ullam nesciunt perferendis cumque cupiditate, maxime officia culpa maiores distinctio, voluptate porro consectetur saepe obcaecati. Libero, incidunt quis!</p>
+                <div ALIGN=RIGHT style="margin-bottom: 1em;">
+                    <input id="C" type="checkbox">
+                    <label for="C">Completada</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal text-light" id="modal-test">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Agregar tarea</h4>
+                <button data-dismiss="#modal-test" class="btn btn-danger">X</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" action="" name="tareaForm">
+                    <label for="">Titulo</label>
+                    <input name="titulo" type="text" required>
+                        
+                    <label for="">Descripcion</label>
+                    <textarea style="border-radius: .25em;" name="texto" id="" cols="30" rows="5" required></textarea>
+
+                    <label for="">Fecha</label>
+                    <input name="fecha" type="date">
+                
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="#modal-test" class="btn btn-primary">Guardar</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

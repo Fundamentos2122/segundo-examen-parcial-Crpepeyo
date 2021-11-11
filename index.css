@@ -1,0 +1,43 @@
+
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-content
+{
+    max-width: 80%;
+}
+
+.form 
+{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.form input
+{
+    border-radius: .25em;
+    height: 30px;
+    margin: 0.5rem 0;
+}
+
+.form textarea
+{
+    border-radius: .25em;
+    margin: 0.5rem 0;
+}
+
+@media(min-width:576px)
+{
+    .modal-content
+    {
+        max-width: 30%;
+    }
+}
